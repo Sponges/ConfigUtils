@@ -1,3 +1,5 @@
+package io.sponges.configutils;
+
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -12,7 +14,7 @@ public final class ConfigLoader {
      * @param plugin instance of Plugin
      * @param directory config file directory
      * @param name file name
-     * @return new Config instance
+     * @return new io.sponges.configutils.Config instance
      * @throws IOException
      */
     public static Config load(Plugin plugin, File directory, String name) throws IOException {
@@ -54,7 +56,7 @@ public final class ConfigLoader {
         } catch (InvalidConfigurationException e) {
             throw new RuntimeException("There is an error in your " + name + " config file:\n" + e.getMessage());
         } catch (FileNotFoundException e) {
-            throw new IllegalStateException("Config file " + name + " could not be created!");
+            throw new IllegalStateException("io.sponges.configutils.Config file " + name + " could not be created!");
         } catch (IOException e) {
             plugin.getLogger().severe("There was an error reading the " + name + " config file:\n" + e.getMessage());
         } finally {

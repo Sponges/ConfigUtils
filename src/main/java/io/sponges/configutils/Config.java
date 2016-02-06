@@ -1,3 +1,5 @@
+package io.sponges.configutils;
+
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.io.File;
