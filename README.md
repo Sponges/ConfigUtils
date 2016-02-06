@@ -1,6 +1,9 @@
 # ConfigUtils
 Util classes to simplify custom Bukkit config files
 
+[![Build Status](https://travis-ci.org/Sponges/ConfigUtils.svg?branch=master)](https://travis-ci.org/Sponges/ConfigUtils)
+[![JitPack](https://jitpack.io/v/sponges/configutils.svg)](https://jitpack.io/#sponges/configutils)
+
 ### Maven
 This project uses JitPack as a maven repository (for now).
 
